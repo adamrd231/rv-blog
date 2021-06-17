@@ -15,12 +15,12 @@ function Blogs() {
     if (blogLoaded) {
         return (
             <div id="blogs" className="home-page-blogs">        
-                {/* BLog layout, pagination or choosing how many to display */}
+                {/* BLog layout, pagination or choosing how many to display */}       
                     { blogLoaded && blogLoaded.map( blog => {
+                        
                         return (
-                    
-                                <Link 
-                                    className="blogs-link" 
+                            <div className="wrapper">
+                                <Link className="blogs-link" 
                                     to={{
                                         pathname: "/blogs/" + blog.slug,
                                         state: {
@@ -32,11 +32,10 @@ function Blogs() {
                                         <img className="home-blog-image" src={blog.blog_image}/>
                                         <div className="blog-burb-container">
                                             <h2>{blog.title}</h2>
-                                            <p>{blog.description}</p>
-                                            <p>{blog.blog.substr(0,300) + "..."}</p>
                                             <p>Click to read more.</p>
                                         </div>      
                                 </Link>
+                            </div>
                            
                         )
                     })}

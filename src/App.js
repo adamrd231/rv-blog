@@ -7,16 +7,17 @@ import Footer from './components/footer';
 import Blogs from './components/blogs';
 import LandingTitle from './components/landing-page/landing-title';
 
+
 function App() {
 
  return (
       <div className="App">
         <header>
-          <LandingImage />
           <Menu />
+          <LandingImage />
         </header>
         <React.Fragment>
-          <LandingTitle></LandingTitle>
+          <LandingTitle />
           <Blogs />
           <Footer />
         </React.Fragment>
