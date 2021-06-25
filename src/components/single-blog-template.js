@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import SecondaryMenu from './secondary-menu';
+import SecondaryMenu from './menus/secondary-menu';
 import Footer from './footer';
 // Import React SummerNote modules
 // import RichTextEditor from './summernote';
@@ -13,7 +13,6 @@ function SingleBlogTemplate(props) {
     const blog = props.location.state;
     console.log(blog)
 
-    
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -29,8 +28,10 @@ function SingleBlogTemplate(props) {
             <div className="single-blog-container">
                 
                 <div className="single-page-blog">
+                    <img className="singlePage-blog-image" src={blog.blog.blog_image}/>
                     <h1>{blog.blog.title}</h1>
-                    <p>{createdOn}</p>
+                    
+                    <p className="created-on">{createdOn}</p>
                     <p className="blog-text" dangerouslySetInnerHTML = {{ __html: blog.blog.blog }}></p>
                     <p className="blog-author">Adam Reed</p>
                 </div>  

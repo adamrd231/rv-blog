@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Menu from './menu';
+import Menu from './menus/menu';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
 

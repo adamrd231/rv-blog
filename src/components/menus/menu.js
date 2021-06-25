@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 function Menu() {
 
     return (
-       <div className="menu-container">
+       <div id="home" className="menu-container">
             <Link to="/" className="menu-item link clickable">Home</Link>
             <HashLink to="#blogs" className="menu-item link clickable">Blogs</HashLink>
             <HashLink to="#footer" className="menu-item link clickable">Contact</HashLink>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-import Menu from './components/menu';
+import Menu from './components/menus/menu';
 import LandingImage from './components/landing-page/landing-image';
 import Footer from './components/footer';
 import Blogs from './components/blogs';

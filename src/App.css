@@ -145,6 +145,12 @@ a:hover {
   font-weight: 900;
 }
 
+.created-on {
+  font-size: 0.3em;
+  font-weight: 700;
+  color: #999;
+}
+
 /*** MENU STYLING ***/
 /* ================ */
 .menu-container {
@@ -167,9 +173,9 @@ a:hover {
   min-height: 6em;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   margin: auto;
+  width: 66%;
   padding-top: 0.66em;
   padding-bottom: 0.66em;
   color: #222;  
@@ -277,8 +283,11 @@ a:hover {
   
 }
 
-.blogs-container {
-
+.singlePage-blog-image {
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .blog-burb-container {
@@ -296,6 +305,8 @@ a:hover {
 .blog-text {
   font-size: 0.9em;
 }
+
+
 
 
 /*** Blogs home page styling ***/
@@ -346,6 +357,11 @@ a:hover {
   padding-bottom: 7em;
 }
 
+.blog-author {
+  font-weight: 900;
+  font-size: 1.25em;
+}
+
 /*** FOOTER SECTION STYLING ***/
 /* ============================== */
 
@@ -353,46 +369,39 @@ a:hover {
   color: #fff;
   background: linear-gradient(100deg, rgb(22, 0, 11), rgb(49, 10, 30));
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 5em;
 }
 
-.footer-row-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.footer-right {
+  padding: 3em;
+  width: 66%;
 }
 
-.footer-row-menu h2 {
-  color: #fff;
-  padding: 1em;
-  padding-top: 0;
+.footer-left {
+  padding: 3em;
 }
 
-.footer-row-icons img {
-  width: 2.5em;
-  height: 2.5em;
-  padding: 1em;
-  padding-bottom: 0;
+.footer-left h2, .footer-right h2 {
+  color: white;
+  margin-top: 0;
+
 }
 
-.footer-row-about-info {
-  width: 100%;
-  display: flex;
-  padding: 1em;
-  justify-content: space-between;
+.footer-copyright {
+  padding-top: 1em;
+  font-weight: 300;
+  font-size: 0.3em;
 }
 
-.footer-info {
+.footer-left h3 {
+  color: white;
+  font-size: 1em;
   
 }
 
-.footer-info-container {
-  padding: 1em;
-}
+
 
 
 
